@@ -1,9 +1,13 @@
 // Styling for page sections
 .page-section {
   padding: 6rem 0;
+  background: #216583;
   .page-section-heading {
     font-size: 2.25rem;
     line-height: 2rem;
+  }
+  #contactForm label{
+    color:red;
   }
   @include media-breakpoint-up(lg) {
     .page-section-heading {
