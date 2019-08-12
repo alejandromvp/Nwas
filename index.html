@@ -21,9 +21,25 @@
 </head>
 
 <body id="page-top">
-
+  <style>
+    .imagen{
+      -webkit-transition:all .9s ease; /* Safari y Chrome */
+      -moz-transition:all .9s ease; /* Firefox */
+      -o-transition:all .9s ease; /* IE 9 */
+      -ms-transition:all .9s ease; /* Opera */
+      width:100%;
+       }
+    .imagen:hover
+      {
+      -webkit-transform:scale(1.25);
+      -moz-transform:scale(1.25);
+      -ms-transform:scale(1.25);
+      -o-transform:scale(1.25);
+      transform:scale(1.25);
+      }
+  </style>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav"
+  <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +67,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/logo.png" alt="">
+      <img class="masthead-avatar mb-5 imagen " src="img/logo.png" alt="">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0">New Angels</h1>
