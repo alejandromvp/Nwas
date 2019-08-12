@@ -10782,7 +10782,7 @@ a.text-dark:hover, a.text-dark:focus {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(41, 52, 98, 0.9);
+  background-color: rgba(41, 52, 98, 0.8);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -10814,6 +10814,10 @@ a.text-dark:hover, a.text-dark:focus {
   line-height: 3rem;
   color: #293462;
   opacity: 1;
+}
+
+.modal-body {
+  background: #00818a;
 }
 
 .floating-label-form-group {
