@@ -5,13 +5,35 @@
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
   .navbar-brand {
-    color: $white;
+    color: #f2f4f6;
   }
   .navbar-nav {
     margin-top: 1rem;
     li.nav-item {
       a.nav-link {
-        color: $white;
+        color: #403A05;
+        &:hover {
+          color: #FFE814;
+        }
+        &:active,
+        &:focus {
+          color: $white;
+        }
+        &.active {
+          color: $primary;
+        }
+      }
+  }
+  .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem;
+  }
+}
+}
+//titulo h3 de los players
+.nav-linkh3 { 
+        color: #eeeeee;
+        text-align: center;
         &:hover {
           color: $primary;
         }
@@ -23,13 +45,6 @@
           color: $primary;
         }
       }
-    }
-  }
-  .navbar-toggler {
-    font-size: 80%;
-    padding: 0.8rem;
-  }
-}
 @include media-breakpoint-up(lg) {
   #mainNav {
     padding-top: 1.5rem;
@@ -44,7 +59,7 @@
     }
     .navbar-nav > li.nav-item > a.nav-link.active {
       color: $white;
-      background: $primary;
+      background: #403A05; //color nav que se activa al bajar
       &:active,
       &:focus,
       &:hover {

@@ -37,16 +37,19 @@
       -o-transform:scale(1.25);
       transform:scale(1.25);
       }
+    #portfolio{
+      margin-top:50px;
+}
   </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive" >
+      <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Roster</a>
@@ -61,38 +64,12 @@
       </div>
     </div>
   </nav>
-
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5 imagen " src="img/logo.png" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0" style="color: #FFE814;">New Angels</h1>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0" style="color: #FFE814">Team Competitivo - Starcraft 2</p>
-
-    </div>
-  </header>
-
   <!-- Portfolio Section -->
   <section class="page-section portfolio" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: #403A05;">Roster</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Roster</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -107,7 +84,7 @@
       <div class="row">
 
         <!-- Portfolio Item 1 -->
-         <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <h3 class="roster_title">DoomMarine</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -167,7 +144,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 400px;height: 310px;">
           </div>
         </div>
 
@@ -180,11 +157,10 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 400px;height: 310px;">
           </div>
         </div>
 
-        <!-- Portfolio Item 6 -->
         <div class="col-md-6 col-lg-4">
           <h3 class="roster_title">Stead</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
@@ -193,15 +169,16 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 450px;height: 310px;">
           </div>
         </div>
+
       <!-- /.row -->
     </div>
       <div class="row">
         <div class="col-md-12 col-lg-12">
           <div class="text-center">
-            <a class="btn btn-xl btn-outline-light" href="./roster.html">
+            <a class="btn btn-xl btn-outline-light" href="#">
               Ver Roster Completo
             </a>
           </div>
@@ -214,7 +191,7 @@
     <div class="container">
 
       <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase" style="color: #FFE814;">Quienes Somos</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white">Quienes Somos</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -246,7 +223,7 @@
     <div class="container">
 
       <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: #403A05;">Contactanos</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -592,6 +569,7 @@
       </div>
     </div>
   </div>
+
   <!-- Portfolio Modal 7 -->
   <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
@@ -630,6 +608,7 @@
       </div>
     </div>
   </div>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

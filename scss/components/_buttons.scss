@@ -2,6 +2,7 @@
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
+  border-color: #BFAE0F;
 }
 
 // Custom social buttons
@@ -28,3 +29,13 @@
     line-height: 3.1rem;
   }
 }
+
+.btn-outline-light{
+  color: #403A05;
+  border-color: #403A05;
+}
+.btn-outline-light:hover{
+  background: #BFAE0F;
+  border-color: #403A05;
+}
+
