@@ -10563,7 +10563,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .page-section {
   padding: 6rem 0;
-  background: #FFE814;
+  background: black;
 }
 
 .page-section .page-section-heading {
@@ -10577,6 +10577,27 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .page-section .page-section-heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+.page-section-roster {
+  padding: 6rem 0;
+  background: #E6D012;
+}
+
+.page-section-roster .page-section-heading {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+
+.page-section-roster #contactForm label {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  .page-section-roster .page-section-heading {
     font-size: 3rem;
     line-height: 2.5rem;
   }
@@ -10914,10 +10935,10 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #403A05;
+  background-color: #80740A;
   color: #fff;
 }
 
 .copyright {
-  background-color: #90830b;
+  background-color: #0D0D0D;
 }
