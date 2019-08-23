@@ -44,7 +44,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="index.php"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
+       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="starcraft logo" width="120px" height="80px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -53,6 +53,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./index.php">Inicio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="noticias/index.php">Noticias</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Roster</a>
@@ -67,6 +70,7 @@
       </div>
     </div>
   </nav>
+ 
   <!-- Portfolio Section -->
   <section class="page-section-roster portfolio" id="portfolio">
     <div class="container">
@@ -230,10 +234,7 @@
 
         <!-- Footer About Text -->
         <div class="col-lg-4">
-          <!-- <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
-            <img class="masthead-avatar mb-5" src="img/logo.png" alt="">
+            <img class="masthead-avatar mb-5" src="img/zealot.png" alt="">
         </div>
 
       </div>

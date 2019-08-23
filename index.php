@@ -41,7 +41,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="starcraft logo" width="120px" height="80px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -50,6 +50,9 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./index.php">Inicio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="noticias/index.php">Noticias</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./roster.php">Roster</a>
@@ -70,7 +73,7 @@
     <div class="container d-flex align-items-center flex-column">
 
       <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5 imagen " src="img/logo.png" alt="">
+      <img class="masthead-avatar mb-5 imagen " src="img/logosc.png" alt="">
 
       <!-- Masthead Heading -->
       <h1 class="masthead-heading text-uppercase mb-0" style="color: #FFE814;">New Angels</h1>
@@ -136,7 +139,7 @@
        <div class="row">
         <div class="col-md-12 col-lg-12">
           <div class="text-center">
-           <img src="img/zealot.png" alt="">
+           <img src="img/new_angels_sec.png" alt="">
           </div>
         </div>   
      </div>
@@ -222,7 +225,7 @@
           <h4 class="text-uppercase mb-4">Nuestras Redes Sociales</h4>
           <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/newAngels2/" target="_blank">
             <i class="fab fa-fw fa-facebook-f"></i>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCKYC18Otfm2VaGgwjMX_gHQ">
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCKYC18Otfm2VaGgwjMX_gHQ" target="_blank">
             <i class="fab fa-youtube"></i>
           </a>
         </div> <!-- cierre col-lg-4 -->
@@ -231,7 +234,7 @@
           <!-- <h4 class="text-uppercase mb-4">About Freelancer</h4>
           <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
             <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
-            <img class="masthead-avatar mb-5" src="img/logo.png" alt="">
+            <img class="masthead-avatar mb-5" src="img/zealot.png" alt="">
         </div> <!-- cierre col-lg-4 -->
       </div><!-- row -->
       </div><!-- container -->
@@ -259,282 +262,6 @@
       <i class="fa fa-chevron-up"></i>
     </a>
   </div>
-  
-
-  <!-- Portfolio Modals -->
-
-  <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Stead</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Master Zerg - 5165 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Razza</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/razza.jpg" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Master Zerg - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true" style="background: #dedede;">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">EvilJhonny</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/jhonny.jpg" alt="" style="width: 300px;height: 300px;">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Gran Maestro - 5400 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">AlejandroMVP</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Zerg Maestro - 4600 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Aiacos</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Zerg Maestro - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Carol</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Maestro - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">DoomMarine</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 4200 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
- 
     
   </body>
   <!-- Bootstrap core JavaScript -->
@@ -550,7 +277,21 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script>
+    /*var MongoClient = require('mongodb').MongoClient;
+      var url = "mongodb://localhost:27017/";
 
+      MongoClient.connect(url, function(err, db) {
+        if (err) throw err;
+        var dbo = db.db("MensajesDB");
+        var query = { address: /^S/ };
+        dbo.collection("customers").find(query).toArray(function(err, result) {
+          if (err) throw err;
+          console.log(result);
+          db.close();
+        });
+}); */
+  </script>
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+
+#form{
+    padding:20px;
+    padding-right: 40px;
+    background:red;
+    border-radius: 5px;
+    background-color: #BFAE0F;
+    cursor: default; 
+}
+
+input{
+    margin:20px;
+
+}
+
+#enviar:hover{
+    background:#E6D012;
+    color:white;
+    -webkit-transition:cubic-bezier(.27, 0, .24, .93) .5s all;
+    
+}
+.item-com{
+   max-width:  80px;
+    padding:20px;
+    min-width: 300px;
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    position:relative;
+    margin-top: 10px;
+    cursor: default;
+    -webkit-user-select:none;
+}
