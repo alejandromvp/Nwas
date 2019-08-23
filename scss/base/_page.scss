@@ -1,7 +1,25 @@
-// Styling for page sections
+// Styling for page sections #216583
 .page-section {
   padding: 6rem 0;
-  background: #216583;
+  background: black; // color fondo roster
+  .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  #contactForm label{
+    color:red;
+  }
+  @include media-breakpoint-up(lg) {
+    .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+.page-section-roster {
+  padding: 6rem 0;
+  background: #E6D012; // color fondo roster
   .page-section-heading {
     font-size: 2.25rem;
     line-height: 2rem;

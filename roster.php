@@ -37,17 +37,26 @@
       -o-transform:scale(1.25);
       transform:scale(1.25);
       }
+    #portfolio{
+      margin-top:50px;
+}
   </style>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/starcraft.png" alt="starcraft logo" width="190px" height="70px"></a>
+       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="starcraft logo" width="120px" height="80px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./index.php">Inicio</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="noticias/index.php">Noticias</a>
+          </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Roster</a>
           </li>
@@ -61,38 +70,13 @@
       </div>
     </div>
   </nav>
-
-  <!-- Masthead -->
-  <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5 imagen " src="img/logo.png" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">New Angels</h1>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Team Competitivo - Starcraft 2</p>
-
-    </div>
-  </header>
-
+ 
   <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section-roster portfolio" id="portfolio">
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Roster</h2>
+      <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: #403a05;">Roster</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -108,20 +92,20 @@
 
         <!-- Portfolio Item 1 -->
         <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">Stead</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+          <h3 class="roster_title">Doomslayer</h3>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/elias.jpeg" alt="" style="width: 450px;height: 310px;">
           </div>
         </div>
 
         <!-- Portfolio Item 2 -->
         <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">Razza</h3>
+          <h3 class="roster_title">Razza</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -134,7 +118,7 @@
 
         <!-- Portfolio Item 3 -->
         <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">Jhonny</h3>
+          <h3 class="roster_title">Jhonny</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -147,7 +131,7 @@
 
         <!-- Portfolio Item 4 -->
          <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">AlejandroMVP</h3>
+          <h3 class="roster_title">AlejandroMVP</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
@@ -160,134 +144,70 @@
 
         <!-- Portfolio Item 5 -->
         <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">Aiacos</h3>
+          <h3 class="roster_title">Aiacos</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 400px;height: 310px;">
           </div>
         </div>
 
         <!-- Portfolio Item 6 -->
          <div class="col-md-6 col-lg-4">
-          <h3 style="color: white;text-align: center;">Carol</h3>
+          <h3 class="roster_title">Carol</h3>
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;">
+            <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 400px;height: 310px;">
           </div>
         </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h3 class="roster_title">Stead</h3>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 450px;height: 310px;">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h3 class="roster_title">CapaBlanca</h3>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/roster/capablanca.png" alt="" style="width: 450px;height: 310px;">
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h3 class="roster_title">MaruJr</h3>
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/roster/marujr.png" alt="" style="width: 450px;height: 310px;">
+          </div>
+        </div>
+
       <!-- /.row -->
     </div>
-      <div class="row">
-        <div class="col-md-12 col-lg-12">
-          <div class="text-center">
-            <a class="btn btn-xl btn-outline-light" href="#">
-              Ver Roster Completo
-            </a>
-          </div>
-      </div>   
-  </div>
   </section>
 
-  <!-- About Section -->
-  <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container">
-
-      <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">Quienes Somos</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom divider-light">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- About Section Content -->
-      <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Somos NewAngels, un equipo Competitivo con una visión semi profesional teniendo como origen peruano y un gran apoyo chileno-mexicano.</p>
-        </div>
-        <div class="col-lg-4 mr-auto">
-          <p class="lead">Nos dedicamos a representar a latam con toda nuestra indole de players en la región</p>
-        </div>
-      </div>
-
-      <!-- About Section Button -->
-      
-
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="page-section" id="contact">
-    <div class="container">
-
-      <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h2>
-
-      <!-- Icon Divider -->
-      <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
-        </div>
-        <div class="divider-custom-line"></div>
-      </div>
-
-      <!-- Contact Section Form -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label style="color:red;">Nombre</label>
-                <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Please enter your name.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Email</label>
-                <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Numero Celular</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Numero Celular" required="required" data-validation-required-message="Please enter your phone number.">
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <div class="control-group">
-              <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label>Mensaje</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Please enter a message."></textarea>
-                <p class="help-block text-danger"></p>
-              </div>
-            </div>
-            <br>
-            <div id="success"></div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
@@ -314,29 +234,29 @@
 
         <!-- Footer About Text -->
         <div class="col-lg-4">
-          <!-- <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
-            <img class="masthead-avatar mb-5" src="img/logo.png" alt="">
+            <img class="masthead-avatar mb-5" src="img/zealot.png" alt="">
         </div>
 
       </div>
     </div>
   </footer>
 
-  <!-- Copyright Section -->
-  <div class="row copyright">
-     <div class="col-md-12 col-lg-9">
-        <section class="copyright py-4 text-center text-white">
-          <div class="container">
-            <small>New Angels &copy; 2019 </small>
-          </div>
-        </section>
+<!-- Copyright Section -->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 .col-sm-12">
+             <small>New Angels &copy; 2019 </small>
+        </div>
+        <div class="col-lg-3 .col-sm-12">
+             <div class="text-white">developed by 
+              <a href="https://www.facebook.com/alejandro17a" style="color:#DC4323;">AlejandroMVP</a>
+             </div>
+        </div>
+      </div>
     </div>
-    <div class="col-md-12 col-lg-3 text-center copyright py-4 text-white">developed by 
-      <a href="https://www.facebook.com/alejandro17a">AlejandroMVP</a>
-    </div>
-</div>
+  </section>
+  
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -360,7 +280,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Stead</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Stead</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -399,7 +319,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Razza</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Razza</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -438,7 +358,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EvilJhonny</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">EvilJhonny</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -477,7 +397,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">AlejandroMVP</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">AlejandroMVP</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -516,7 +436,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Aiacos</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Aiacos</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -555,7 +475,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Carol</h2>
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Carol</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -568,6 +488,123 @@
                    <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
                 <!-- Portfolio Modal - Text -->
                 <p class="mb-5" style="font-weight: bold;">Terran Maestro - ? MMR</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 7 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">DoomMarine</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                   <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 4200 MMR</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Portfolio Modal 8 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">CapaBlanca</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                   <img class="img-fluid" src="img/roster/capablanca.png" alt="" style="width: 300px;height: 300px;"><br><br>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 4013 MMR</p>
+                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                  <i class="fas fa-times fa-fw"></i>
+                  Cerrar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- Portfolio Modal 8 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <i class="fas fa-times"></i>
+          </span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title -->
+                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">MaruJr</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image -->
+                   <img class="img-fluid" src="img/roster/marujr.png" alt="" style="width: 300px;height: 300px;"><br><br>
+                <!-- Portfolio Modal - Text -->
+                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 3480 MMR</p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Cerrar

@@ -15,7 +15,7 @@
       left: 0;
       transition: $transition-base;
       opacity: 0;
-      background-color: fade-out(#293462, .2);
+      background-color: fade-out(#80740A, .2);
       &:hover {
         opacity: 1;
       }
@@ -43,10 +43,19 @@
     top: 1rem;
     font-size: 3rem;
     line-height: 3rem;
-    color: $primary;
+    color: #403A05;
     opacity: 1;
   }
 }
 .modal-body{
-  background: #00818a;
+  background: #BFAE0F;
+}
+
+.title_modal{
+  color:#403A05;
+}
+
+.roster_title{
+  color: #403A05;
+  text-align: center;
 }
