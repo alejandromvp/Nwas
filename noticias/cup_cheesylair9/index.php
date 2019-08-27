@@ -105,7 +105,7 @@
         <p><b style="color: #5005F2">Anuncios oficiales:</b> <a href="https://www.facebook.com/SCIIMarte" style="text-decoration-line: underline;"><b>facebook.com/SCIIMarte</b></a></p>
 
       </div><!-- /.blog-post -->
-      <form action="">
+
       <div id="caja_mensajes_div">
         <div id="form">
         <input type="text" id="nick" placeholder="nick" class="form-control">
@@ -115,7 +115,7 @@
         <h3 style="margin-top: 15px;">Comentarios: </h3>    
         <hr>        
       </div>
-      </form>
+
       <nav class="blog-pagination" style="margin-top:100px;">
         <a class="btn btn-outline-primary" href="../index.php">Regresar</a>
       </nav>
@@ -243,7 +243,8 @@
                   mensaje:mensaje_txt,
                   fecha: fecha_txt
                 }); 
-              
+             $("#mensaje").val('');
+             $("#nick").val('');
             }else{
             alert("porfavor complete todos los campos");     
             }  

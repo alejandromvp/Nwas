@@ -74,7 +74,14 @@
       <h2 class="pb-3 mb-4 font-italic border-bottom">
         Noticias, torneos y mas.
       </h2>
+      <div class="blog-post">
+        <h3 class="blog-post-title">TheCheesyLair Tournament #9 </h3>
+        <p class="blog-post-meta">Agosto 27, 2019 by <a href="#">Francisco Barrera alias Marte</a></p>
 
+        <p>Muy bien señores, nos complace presentar la Novena  Edición de TheCheesyLair apta desde Bronces hasta diamante 2</p>
+        <h4><strong><a href="cup_cheesylair9/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
+      </div><!-- /.blog-post -->
+    <hr style="background: #403a05;opacity: 0.6;">
       <div class="blog-post">
         <h3 class="blog-post-title">Raven's Cup Diamantes #1 </h3>
         <p class="blog-post-meta">23 de agosto, 2019 por <a href="#">Francisco Barrera alias Marte</a></p>
@@ -91,14 +98,7 @@
         #1 del torneo #Thecheesylair🎉🎉</p>
         <h4><strong><a href="campeon_thecheser8/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
       </div><!-- /.blog-post -->
-    <hr style="background: #403a05;opacity: 0.6;">
-      <div class="blog-post">
-        <h3 class="blog-post-title">TheCheesyLair Tournament #9 </h3>
-        <p class="blog-post-meta">Agosto 27, 2019 by <a href="#">Francisco Barrera alias Marte</a></p>
 
-        <p>Muy bien señores, nos complace presentar la Novena  Edición de TheCheesyLair apta desde Bronces hasta diamante 2</p>
-        <h4><strong><a href="cup_cheesylair9/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
-      </div><!-- /.blog-post -->
     </div><!-- /.blog-main -->
 
     <aside class="col-md-4 blog-sidebar">

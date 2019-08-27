@@ -90,7 +90,7 @@
          <img src="https://scontent.fscl9-2.fna.fbcdn.net/v/t1.0-9/68932380_1338933066274636_7997806005159198720_n.jpg?_nc_cat=108&_nc_oc=AQnS88i7PsP8RFhs9zuzi6ed5rf5K8BfEB_Af8xQJcT7f54VhTvlcJaHBMzDwVsE5Sc&_nc_ht=scontent.fscl9-2.fna&oh=e9e63a2680a734e97788fca8a77e8583&oe=5DDBFD41" alt="">
       </div><!-- /.blog-post -->
 
-       <form action="">
+
       <div id="caja_mensajes_div">
         <div id="form">
         <input type="text" id="nick" placeholder="nick" class="form-control">
@@ -100,7 +100,7 @@
         <h3 style="margin-top: 15px;">Comentarios: </h3>    
         <hr>        
       </div>
-      </form>
+
 
       <nav class="blog-pagination" style="margin-top:20px;">
         <a class="btn btn-outline-primary" href="../index.php">Regresar</a>
@@ -226,7 +226,8 @@
                   mensaje:mensaje_txt,
                   fecha: fecha_txt
                 }); 
-              
+              $("#mensaje").val('');
+             $("#nick").val('');
             }else{
             alert("porfavor complete todos los campos");     
             }  
