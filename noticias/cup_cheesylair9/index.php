@@ -77,12 +77,12 @@
       </h3>
 
       <div class="blog-post">
-        <h2 class="blog-post-title">Raven's Cup Diamantes #1 </h2>
-        <p class="blog-post-meta">23 de agosto, 2019 por <a href="#">Francisco Barrera alias Marte</a></p>
+        <h2 class="blog-post-title">TheCheesyLair Tournament #9 </h2>
+        <p class="blog-post-meta">27 de agosto, 2019 por <a href="#">Francisco Barrera alias Marte</a></p>
 
-        <p>Muy bien señores, nos complace presentar la Primera  Edición de Raven's Cup Diamantes #1 apta solo para diamantes (hasta 4.4k de MMR), la idea con este torneo es ver la actividad de la gente en las comunidades latinas de Starcraft II y ver el entusiasmo que le dan a ello... en base a eso las reglas son las siguientes:</p>
+        <p>Muy bien señores, nos complace presentar la Novena  Edición de TheCheesyLair apta desde Bronces hasta diamante 2, la idea con este torneo es ver la actividad de la gente en las comunidades latinas de Starcraft II y ver el entusiasmo que le dan a ello... en base a eso las reglas son las siguientes::</p>
         
-        <p><b>1.- Solo Diamantes 3 hasta Diamante 1 (4.400 de MMR) no se aceptan quejas ni cuentas smurfs. Se hará un check con cada cuenta que se inscriba para evitar cuentas falsas. Para entrar al Torneo deberán de estar dentro del canal en el juego "CheesyLair", de no estar.... no serán elegibles para jugar quedando eliminados por W.O.</b></p>
+        <p><b>1.- solo desde bronce a Diamante 2 (4.080k de MMR) no se aceptan quejas ni cuentas smurfs. Se hará un check con cada cuenta que se inscriba para evitar cuentas falsas. Para entrar al Torneo deberán de estar dentro del canal en el juego "CheesyLair", de no estar.... no serán elegibles para jugar quedando eliminados por W.O.</b></p>
 
         <p><b>2.- Tener un historial de liga de al menos 3 temporadas para verificar que la cuenta por lo menos lleva un tiempo creada y a su vez, no haber pertenecido a liga de maestros durante las 3 temporadas anteriores.-</b></p>
 
@@ -96,7 +96,7 @@
   
         <p><b>7.- La persona encargada de la administración será Marte (Marte#11479)</b></p>
 
-        <p><b>8.- El Premio sera el Price Pool Final de Matcherino (https://matcherino.com/t/tcl9) Cod: TCL9 distribuidos de la siguiente manera:</b></p>
+        <p><b>8.-  El Premio sera el Price Pool Final de Matcherino (https://matcherino.com/t/tcl9) Cod: TCL9 distribuidos de la siguiente manera:</b></p>
 
         <p style="color: #DC4323"><b>Primer Lugar     : 60% del premio.-</b></p>
         <p style="color: #DC4323"><b>Segundo Lugar : 40% del premio.-</b></p>
@@ -210,8 +210,11 @@
   <!-- Custom scripts for this template -->
   <script src="../../js/freelancer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/BrowserFS/2.0.0/browserfs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js0"></script>
+  
   <script src="../../js/moment_español.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
 
   <!-- Add Firebase products that you want to use -->
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
@@ -221,7 +224,7 @@
      $(document).ready(function(){    
         firebase = conectarFirebase();
         const db = firebase.database();
-        var ref = db.ref("noticias/cup_diamantes1_1-0");
+        var ref = db.ref("noticias/cup_thecheesylair9");
 
         ref.orderByChild("fecha").on("child_added", function(snapshot){
             var value = snapshot.val();
@@ -247,6 +250,7 @@
          }); 
      });
     </script>
+
 </body>
 
 </html>
