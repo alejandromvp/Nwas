@@ -173,7 +173,7 @@
         </div>
       </div>
     </div>
-  
+  </section>
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
@@ -213,7 +213,7 @@
            var mensaje =  $("#mensaje").val();
            var nick =  $("#nick").val();
            var fecha = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm // August 23rd 2019, 3:59:01 pm;
-            if(mensaje != ""){
+            if(mensaje != "" && nick != ""){
                 
                $.post("crear.php",{"mensaje":mensaje, "nick":nick, "fecha":fecha},function(data){
                $(".item-com").remove();

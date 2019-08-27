@@ -1,8 +1,8 @@
 <?php
 
- $com =  strip_tags($_POST['mensaje']);
- $nick =  strip_tags($_POST['nick']);
- $fecha =  strip_tags($_POST['fecha']);
+ $com =  $_POST['mensaje'];
+ $nick =  $_POST['nick'];
+ $fecha =  $_POST['fecha'];
 
 
  $raiz = file_get_contents("bd/com.json");

@@ -80,16 +80,16 @@
         <p class="blog-post-meta">23 de agosto, 2019 por <a href="#">Francisco Barrera alias Marte</a></p>
 
         <p>Muy bien señores, nos complace presentar la Primera  Edición de Raven's Cup Diamantes #1 apta solo para diamantes (hasta 4.4k de MMR), la idea con este torneo es ver la actividad de la gente en las comunidades latinas de Starcraft II y ver el entusiasmo que le dan a ello... en base a eso las reglas son las siguientes:</p>
-        <strong><a href="ravencap1/index.php">Leer mas ...</a></strong>
+        <h3><strong><a href="ravencap1/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h3>
       </div><!-- /.blog-post -->
-
+  <hr>
       <div class="blog-post">
         <h2 class="blog-post-title">Campeon TheCheesyLair #8</h2>
         <p class="blog-post-meta">Agosto 23, 2019 by <a href="#">Francisco Barrera alias Marte</a></p>
 
         <p>Nos complace anunciar que uno de los miembros #roy_sc2 de la escuadra de #STARCRAFT2 quedo en el puesto
         #1 del torneo #Thecheesylair🎉🎉</p>
-        <strong><a href="campeon_thecheser8/index.php">Leer mas ...</a></strong>
+        <h3><strong><a href="campeon_thecheser8/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h3>
       </div><!-- /.blog-post -->
 
     </div><!-- /.blog-main -->
