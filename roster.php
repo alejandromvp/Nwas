@@ -193,7 +193,7 @@
             $("#items_player").append(
                 '<div class="col-md-6 col-lg-4">'+
                   '<h3 class="roster_title">'+value.nick+'</h3>'+
-                  '<div class="portfolio-item mx-auto" data-toggle="modal" data-target="'+value.id_modal+'">'+
+                  '<div class="portfolio-item mx-auto" data-toggle="modal" data-target="#'+value.id_modal+'">'+
                     '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">'+
                      ' <div class="portfolio-item-caption-content text-center text-white">'+
                         '<i class="fas fa-plus fa-3x"></i>'+
@@ -205,7 +205,7 @@
             ); 
 
             $("#items-modals").append(
-            '<div class="portfolio-modal modal fade" id="'+value.id_modal+'" tabindex="-1" role="dialog" aria-labelledby="'+value.id_modal+'Label" aria-hidden="true">'+
+            '<div class="portfolio-modal modal fade" id='+value.id_modal+' tabindex="-1" role="dialog" aria-labelledby="'+value.id_modal+'Label" aria-hidden="true">'+
               '<div class="modal-dialog modal-xl" role="document">'+
                 '<div class="modal-content">'+
                   '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
