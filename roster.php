@@ -17,11 +17,7 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-  <style>
+   <style>
     .imagen{
       -webkit-transition:all .9s ease; /* Safari y Chrome */
       -moz-transition:all .9s ease; /* Firefox */
@@ -41,6 +37,17 @@
       margin-top:50px;
 }
   </style>
+</head>
+
+<body id="page-top">
+ 
+  <?php 
+     $roster = array(
+        array("doomMarine", "2002", "id7"),
+        array("Lombriz", "Burro"),
+        array("Murciélago", "Cocodrilo")
+     );
+  ?>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
@@ -88,124 +95,9 @@
       </div>
 
       <!-- Portfolio Grid Items -->
-      <div class="row">
-
-        <!-- Portfolio Item 1 -->
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Doomslayer</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/elias.jpeg" alt="" style="width: 450px;height: 310px;">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 2 -->
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Razza</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/razza.jpg" alt="" style="width: 300px;height: 300px;">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 3 -->
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Jhonny</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/jhonny.jpg" alt="" style="width: 300px;height: 300px;">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 4 -->
-         <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">AlejandroMVP</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 5 -->
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Aiacos</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 400px;height: 310px;">
-          </div>
-        </div>
-
-        <!-- Portfolio Item 6 -->
-         <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Carol</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 400px;height: 310px;">
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">Stead</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 450px;height: 310px;">
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">CapaBlanca</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/capablanca.png" alt="" style="width: 450px;height: 310px;">
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4">
-          <h3 class="roster_title">MaruJr</h3>
-          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal9">
-            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-              <div class="portfolio-item-caption-content text-center text-white">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/roster/marujr.png" alt="" style="width: 450px;height: 310px;">
-          </div>
-        </div>
-
-      <!-- /.row -->
-    </div>
+      <div class="row" id="items_player">
+        <!-- Los player se agregan con javascript -->
+      </div>
   </section>
 
 
@@ -267,356 +159,10 @@
   <!-- Portfolio Modals -->
 
   <!-- Portfolio Modal 1 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Stead</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Master Zerg - 5165 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Portfolio Modal 2 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Razza</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/razza.jpg" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Master Zerg - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div id="items-modals">
 
-  <!-- Portfolio Modal 3 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true" style="background: #dedede;">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">EvilJhonny</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/jhonny.jpg" alt="" style="width: 300px;height: 300px;">
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Gran Maestro - 5400 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
-
-  <!-- Portfolio Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">AlejandroMVP</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Zerg Maestro - 4600 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-labelledby="portfolioModal5Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Aiacos</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                <img class="img-fluid" src="img/roster/logo_zerg.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Zerg Maestro - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">Carol</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Maestro - ? MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Portfolio Modal 7 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">DoomMarine</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/logo_terran.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 4200 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">CapaBlanca</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/capablanca.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 4013 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-     <!-- Portfolio Modal 8 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-labelledby="portfolioModal6Label" aria-hidden="true">
-    <div class="modal-dialog modal-xl" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">
-            <i class="fas fa-times"></i>
-          </span>
-        </button>
-        <div class="modal-body text-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title title_modal text-uppercase mb-0">MaruJr</h2>
-                <!-- Icon Divider -->
-                <div class="divider-custom">
-                  <div class="divider-custom-line"></div>
-                  <div class="divider-custom-icon">
-                    <i class="fas fa-star"></i>
-                  </div>
-                  <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Modal - Image -->
-                   <img class="img-fluid" src="img/roster/marujr.png" alt="" style="width: 300px;height: 300px;"><br><br>
-                <!-- Portfolio Modal - Text -->
-                <p class="mb-5" style="font-weight: bold;">Terran Diamante - 3480 MMR</p>
-                <button class="btn btn-primary" href="#" data-dismiss="modal">
-                  <i class="fas fa-times fa-fw"></i>
-                  Cerrar
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -630,6 +176,91 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="./js/firebase.js"></script>
+  <script>
+     $(document).ready(function(){    
+        firebase = conectarFirebase();
+        const db = firebase.database();
+        var ref = db.ref("roster");
+
+        ref.orderByChild("posicion_web").on("child_added", function(array){
+            var value = array.val();
+            $("#items_player").append(
+                '<div class="col-md-6 col-lg-4">'+
+                  '<h3 class="roster_title">'+value.nick+'</h3>'+
+                  '<div class="portfolio-item mx-auto" data-toggle="modal" data-target="'+value.id_modal+'">'+
+                    '<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">'+
+                     ' <div class="portfolio-item-caption-content text-center text-white">'+
+                        '<i class="fas fa-plus fa-3x"></i>'+
+                      '</div>'+
+                    '</div>'+
+                    '<img class="img-fluid" src="img/roster/'+value.img+'" alt="" style="width: 300px;height: 300px;">'+
+                  '</div>'+
+                '</div>'
+            ); 
+
+            $("#items-modals").append(
+            '<div class="portfolio-modal modal fade" id="'+value.id_modal+'" tabindex="-1" role="dialog" aria-labelledby="'+value.id_modal+'Label" aria-hidden="true">'+
+              '<div class="modal-dialog modal-xl" role="document">'+
+                '<div class="modal-content">'+
+                  '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'+
+                    '<span aria-hidden="true">'+
+                      '<i class="fas fa-times"></i>'+
+                    '</span>'+
+                  '</button>'+
+                  '<div class="modal-body text-center">'+
+                    '<div class="container">'+
+                      '<div class="row justify-content-center">'+
+                        '<div class="col-lg-8">'+
+                          '<h2 class="portfolio-modal-title title_modal text-uppercase mb-0">'+value.nick+'</h2>'+
+                          '<div class="divider-custom">'+
+                            '<div class="divider-custom-line"></div>'+
+                            '<div class="divider-custom-icon">'+
+                              '<i class="fas fa-star"></i>'+
+                            '</div>'+
+                            '<div class="divider-custom-line"></div>'+
+                          '</div>'+
+                          '<img class="img-fluid" src="img/roster/'+value.img+'" alt="" style="width: 300px;height: 300px;"><br><br>'+
+                          '<p class="mb-5" style="font-weight: bold;">'+value.raza+' - '+value.mmr+ ' MMR</p>'+
+                          '<button class="btn btn-primary" href="#" data-dismiss="modal">'+
+                            '<i class="fas fa-times fa-fw"></i>'+
+                            'Cerrar'+
+                          '</button>'+
+                        '</div>'+
+                      '</div>'+
+                    '</div>'+
+                  '</div>'+
+                '</div>'+
+              '</div>'+
+            '</div>'
+            );
+
+
+        });
+         $("#enviar").click(function(){   
+           var mensaje_txt =  $("#mensaje").val();
+           var nick_txt =  $("#nick").val();
+           var fecha_txt = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm // August 23rd 2019, 3:59:01 pm;
+            if(mensaje != "" && nick != ""){
+                let nuevocomentario = ref.push();
+                nuevocomentario.set({
+                  nick: nick_txt,
+                  mensaje:mensaje_txt,
+                  fecha: fecha_txt
+                }); 
+              $("#mensaje").val('');
+             $("#nick").val('');
+            }else{
+            alert("porfavor complete todos los campos");     
+            }  
+         }); 
+     });
+  </script>
 
 </body>
 
