@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>agregar player</title>
+  <meta charset="UTF-8">
+  <title>agregar player</title>
 </head>
 <body>
-	 <div id="caja_mensajes_div">
+   <div id="caja_mensajes_div">
         <div id="form">
         <input type="text" id="nick" placeholder="nick" class="form-control">
         <input type="text" id="img" placeholder="img" class="form-control">
@@ -36,8 +36,8 @@
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
   <script src="../js/firebase.js"></script>
-	<script>
-		$(document).ready(function(){    
+  <script>
+    $(document).ready(function(){    
         firebase = conectarFirebase();
         const db = firebase.database();
         var ref = db.ref("roster");
@@ -70,6 +70,6 @@
             }  
          }); 
      });
-	</script>
+  </script>
 </body>
 </html>

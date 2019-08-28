@@ -17,6 +17,7 @@
 
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
+  <link href="./css/caja_comentarios.css" rel="stylesheet">
    <style>
     .imagen{
       -webkit-transition:all .9s ease; /* Safari y Chrome */
@@ -40,14 +41,6 @@
 </head>
 
 <body id="page-top">
- 
-  <?php 
-     $roster = array(
-        array("doomMarine", "2002", "id7"),
-        array("Lombriz", "Burro"),
-        array("Murciélago", "Cocodrilo")
-     );
-  ?>
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
@@ -176,6 +169,8 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="../../js/moment_español.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
 
   <!-- Add Firebase products that you want to use -->
@@ -184,12 +179,14 @@
   <script src="./js/firebase.js"></script>
   <script>
      $(document).ready(function(){    
-        firebase = conectarFirebase();
+        var firebase = conectarFirebase();
         const db = firebase.database();
         var ref = db.ref("roster");
-
-        ref.orderByChild("posicion_web").on("child_added", function(array){
-            var value = array.val();
+        //napshot.key
+        ref.orderByChild("posicion_web").on("child_added", function(snapshot){
+            var value = snapshot.val();
+            var key = snapshot.key;
+            var ref_comentario = db.ref("roster/"+key+"/comentarios");
             $("#items_player").append(
                 '<div class="col-md-6 col-lg-4">'+
                   '<h3 class="roster_title">'+value.nick+'</h3>'+
@@ -203,6 +200,14 @@
                   '</div>'+
                 '</div>'
             ); 
+            var funcion ='<input type="submit" class="btn btn-primary" value="Publicar comentario" id="enviar"' + "onclick = list_comentarios('"+key+"');  " +'>';
+            var comentario = "";
+            ref_comentario.orderByChild("fecha").on("child_added", function(snapshot){
+            var value = snapshot.val();
+                comentario = comentario.concat('<div"><p>Fecha mensaje:<b style="color:#403a05"> '+(value.fecha)+'</b><p/><p>Nickname:<b style="color:#403a05">'+value.nick+'</b><p/><p>Mensaje: <b style="color:#403a05">'+value.mensaje+'</b><p/><hr>');
+       
+            });
+
 
             $("#items-modals").append(
             '<div class="portfolio-modal modal fade" id='+value.id_modal+' tabindex="-1" role="dialog" aria-labelledby="'+value.id_modal+'Label" aria-hidden="true">'+
@@ -227,10 +232,23 @@
                           '</div>'+
                           '<img class="img-fluid" src="img/roster/'+value.img+'" alt="" style="width: 300px;height: 300px;"><br><br>'+
                           '<p class="mb-5" style="font-weight: bold;">'+value.raza+' - '+value.mmr+ ' MMR</p>'+
-                          '<button class="btn btn-primary" href="#" data-dismiss="modal">'+
-                            '<i class="fas fa-times fa-fw"></i>'+
-                            'Cerrar'+
-                          '</button>'+
+                          '<div id="caja_mensajes_div">'+
+                            '<div id="form">'+
+                            '<input type="text" id="'+key+'nick" placeholder="nick" class="form-control">'+
+                            '<input type="text" id="'+key+'mensaje" placeholder="Comentario" class="form-control">'+
+                             '<input type="text" id="key_id" name="custId" value="'+key+'" hidden>'+
+                            funcion+
+                             
+                              '<h3 style="margin-top: 15px;">Comentarios: </h3>'+
+                             '<div id="'+key+'" class="comentaios_list">'+comentario+'</div>'+    
+                              '<hr>'+ 
+                              '<button class="btn btn-primary" href="#" data-dismiss="modal">'+
+                              '<i class="fas fa-times fa-fw"></i>'+
+                              'Cerrar'+
+                              '</button>'+
+                            '</div>'+       
+                          '</div>'+
+                          
                         '</div>'+
                       '</div>'+
                     '</div>'+
@@ -239,29 +257,43 @@
               '</div>'+
             '</div>'
             );
-
-
         });
-         $("#enviar").click(function(){   
-           var mensaje_txt =  $("#mensaje").val();
-           var nick_txt =  $("#nick").val();
-           var fecha_txt = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm // August 23rd 2019, 3:59:01 pm;
-            if(mensaje != "" && nick != ""){
-                let nuevocomentario = ref.push();
-                nuevocomentario.set({
-                  nick: nick_txt,
-                  mensaje:mensaje_txt,
-                  fecha: fecha_txt
-                }); 
-              $("#mensaje").val('');
-             $("#nick").val('');
-            }else{
-            alert("porfavor complete todos los campos");     
-            }  
-         }); 
+
      });
   </script>
 
+  <script>
+
+     function list_comentarios(key){
+      const db = firebase.database();
+      var key = key;
+      var ref2 = db.ref("roster/"+key+"/comentarios");
+      var mensaje_txt =  $("#"+key+"mensaje").val();
+      var nick_txt =  $("#"+key+"nick").val();
+      var fecha_txt = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm //
+      if(mensaje_txt != "" && nick_txt != ""){
+            let nuevocomentario = ref2.push();
+            nuevocomentario.set({
+                mensaje: mensaje_txt,
+                nick :nick_txt,
+                fecha: fecha_txt
+            }); 
+            $("#"+key+"mensaje").val('');
+            $("#"+key+"nick").val('');
+      }else{
+            alert("porfavor complete todos los campos");     
+            }
+
+      var comentario = "";
+      var ref_reset_comentario = db.ref("roster/"+key+"/comentarios");
+      $('#'+key).empty();
+      ref_reset_comentario.orderByChild("fecha").on("child_added", function(snapshot){
+          var value = snapshot.val();
+          comentario = comentario.concat('<div><p>Fecha mensaje:<b style="color:#403a05"> '+(value.fecha)+'</b><p/><p>Nickname: <b style="color:#403a05">'+value.nick+'</b><p/><p>Mensaje: <b style="color:#403a05">'+value.mensaje+'</b><p/><hr>');
+      });
+      $('#'+key).append(comentario);
+     }
+  </script>
 </body>
 
 </html>
