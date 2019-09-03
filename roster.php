@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
   <title>New Angels - Starcraft 2</title>
-
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -91,6 +91,7 @@
       <div class="row" id="items_player">
         <!-- Los player se agregan con javascript -->
       </div>
+    </div>
   </section>
 
 

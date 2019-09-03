@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>agregar player</title>
+  <link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
 </head>
 <body>
    <div id="caja_mensajes_div">
