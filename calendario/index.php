@@ -52,6 +52,15 @@
     #portfolio{
       margin-top:50px;
 }
+footer {
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  margin-top: 1000px;
+}
 </style>
 </head>
 <body id="page-top">
@@ -87,7 +96,7 @@
  
   <!-- Portfolio Section -->
   <section>
-    <div class="container" style="margin-top: 100px;max-height: 100vh; overflow: scroll;">
+    <div class="container" style="margin-top: 100px;max-height: 80vh; overflow: scroll;margin-bottom: 100px;">
       <!-- Portfolio Grid Items -->
       <div class="row">
         <div class="col-lg-12 .col-sm-12" style="text-align: center;">
@@ -97,7 +106,36 @@
     </div>
   </section>
 
+<footer class="footer text-center">
+    <div class="container">
+      <div class="row">
 
+        <!-- Footer Location -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Localizacion</h4>
+          <p class="lead mb-0">Tarsonis
+            <br><!-- Clark, MO 65243 --></p>
+        </div>
+
+        <!-- Footer Social Icons -->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="text-uppercase mb-4">Nuestras Redes Sociales</h4>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/newAngels2/" target="_blank">
+            <i class="fab fa-fw fa-facebook-f"></i>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCKYC18Otfm2VaGgwjMX_gHQ" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div> <!-- cierre col-lg-4 -->
+        <!-- Footer About Text -->
+        <div class="col-lg-4">
+          <!-- <h4 class="text-uppercase mb-4">About Freelancer</h4>
+          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p> -->
+            <img class="masthead-avatar mb-5" src="img/zealot.png" alt="">
+        </div> <!-- cierre col-lg-4 -->
+      </div><!-- row -->
+      </div><!-- container -->
+  </footer>
 
  
 <script src="../vendor/jquery/jquery.min.js"></script>
@@ -130,64 +168,48 @@
   const db = firebase.database();
   var ref = db.ref("eventos");
 
-   var initialLocaleCode = 'es';
-   var localeSelectorEl = 'es';
-   var calendarEl = document.getElementById('calendar');
+  var list = {
+    'datos' :[]
+    };
 
-   document.addEventListener('DOMContentLoaded', function() {
-    window.value = [];
-    // arreglo.push({
-    //       'title': 'All Day Event',
-    //       'start': '2019-09-14'
-    //     });  
-    ref.on("child_added", function(snapshot){
-            var value = snapshot.val();
-            var key = snapshot.key;
-            window.value.push({
-              'title': value.nombre_evento,
-              'start': value.fecha_inicio
-            });
-            
-    }); 
-    console.log(window.value);
+  var initialLocaleCode = 'es';
+  var localeSelectorEl = 'es';
+  var calendarEl = document.getElementById('calendar');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
-      header: {
-        left: 'prev,next today',
-        center: 'title',
-        right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-      },
-      locale: initialLocaleCode,
-      buttonIcons: false, // show the prev/next text
-      weekNumbers: true,
-      navLinks: true, // can click day/week names to navigate views
-      editable: true,
-      eventLimit: true, // allow "more" link when too many events
-      events: window.value
-    });
+  ref.once("value").then(function(snapshot) {
+      snapshot.forEach(function(childSnapshot) {
+          var key = childSnapshot.key;
+          var childData = childSnapshot.val();
+          list.datos.push({
+                  'title': childData.nombre_evento,
+                  'start': childData.fecha_inicio
+          }); //fin push arreglo
+      });//fin foreach firebase
 
-    calendar.render();
+      json = JSON.stringify(list); // aqui tienes la lista de objetos en Json
+      var obj = JSON.parse(json);
+      console.log(obj.datos);
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+          },
+          locale: initialLocaleCode,
+          buttonIcons: false, // show the prev/next text
+          weekNumbers: true,
+          navLinks: true, // can click day/week names to navigate views
+          editable: true,
+          eventLimit: true, // allow "more" link when too many events
+          events: obj.datos
+      });
+      calendar.render(); 
+  }); //fin funcion firebase
 
-    // build the locale selector's options
-    calendar.getAvailableLocaleCodes().forEach(function(localeCode) {
-      var optionEl = document.createElement('option');
-      optionEl.value = localeCode;
-      optionEl.selected = localeCode == initialLocaleCode;
-      optionEl.innerText = localeCode;
-      localeSelectorEl.appendChild(optionEl);
-    });
-
-    // when the selected option changes, dynamically change the calendar option
-    localeSelectorEl.addEventListener('change', function() {
-      if (this.value) {
-        calendar.setOption('locale', this.value);
-      }
-    });
-
-  });
 
 </script>
+
 </body>
 </html>
 <!-- events: [
