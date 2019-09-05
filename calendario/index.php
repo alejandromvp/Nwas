@@ -67,7 +67,7 @@ footer {
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/logo.png" alt="starcraft logo" width="120px" height="80px"></a>
+       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="../img/logo.png" alt="starcraft logo" width="120px" height="80px"></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -75,19 +75,19 @@ footer {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./index.php">Inicio</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.php">Inicio</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="noticias/index.php">Noticias</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../noticias/index.php">Noticias</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Roster</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.php#portfolio">Roster</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Quienes Somos</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.php#about">Quienes Somos</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contactanos</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../index.php#contact">Contactanos</a>
           </li>
         </ul>
       </div>
