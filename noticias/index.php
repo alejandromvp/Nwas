@@ -71,25 +71,32 @@
   <main role="main" class="container" style="margin-top:150px;margin-bottom: 40px;">
   <div class="row">
     <div class="col-md-8 blog-main">
-      <h3 class="pb-3 mb-4 font-italic border-bottom">
+      <h2 class="pb-3 mb-4 font-italic border-bottom">
         Noticias, torneos y mas.
-      </h3>
-
+      </h2>
       <div class="blog-post">
-        <h2 class="blog-post-title">Raven's Cup Diamantes #1 </h2>
+        <h3 class="blog-post-title">TheCheesyLair Tournament #9 </h3>
+        <p class="blog-post-meta">Agosto 27, 2019 by <a href="#">Francisco Barrera alias Marte</a></p>
+
+        <p>Muy bien señores, nos complace presentar la Novena  Edición de TheCheesyLair apta desde Bronces hasta diamante 2</p>
+        <h4><strong><a href="cup_cheesylair9/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
+      </div><!-- /.blog-post -->
+    <hr style="background: #403a05;opacity: 0.6;">
+      <div class="blog-post">
+        <h3 class="blog-post-title">Raven's Cup Diamantes #1 </h3>
         <p class="blog-post-meta">23 de agosto, 2019 por <a href="#">Francisco Barrera alias Marte</a></p>
 
         <p>Muy bien señores, nos complace presentar la Primera  Edición de Raven's Cup Diamantes #1 apta solo para diamantes (hasta 4.4k de MMR), la idea con este torneo es ver la actividad de la gente en las comunidades latinas de Starcraft II y ver el entusiasmo que le dan a ello... en base a eso las reglas son las siguientes:</p>
-        <h3><strong><a href="ravencap1/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h3>
+        <h4><strong><a href="ravencap1/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
       </div><!-- /.blog-post -->
-  <hr>
+  <hr style="background: #403a05;opacity: 0.6;">
       <div class="blog-post">
-        <h2 class="blog-post-title">Campeon TheCheesyLair #8</h2>
+        <h3 class="blog-post-title">Campeon TheCheesyLair #8</h3>
         <p class="blog-post-meta">Agosto 23, 2019 by <a href="#">Francisco Barrera alias Marte</a></p>
 
         <p>Nos complace anunciar que uno de los miembros #roy_sc2 de la escuadra de #STARCRAFT2 quedo en el puesto
         #1 del torneo #Thecheesylair🎉🎉</p>
-        <h3><strong><a href="campeon_thecheser8/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h3>
+        <h4><strong><a href="campeon_thecheser8/index.php" style="text-decoration: underline;">Leer mas ...</a></strong></h4>
       </div><!-- /.blog-post -->
 
     </div><!-- /.blog-main -->

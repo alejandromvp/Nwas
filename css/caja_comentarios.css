@@ -1,4 +1,5 @@
 
+
 #form{
     padding:20px;
     padding-right: 40px;
@@ -6,6 +7,7 @@
     border-radius: 5px;
     background-color: #BFAE0F;
     cursor: default; 
+    background: #e6d012;
 }
 
 input{
@@ -30,4 +32,11 @@ input{
     margin-top: 10px;
     cursor: default;
     -webkit-user-select:none;
+}
+
+.comentaios_list{
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    
 }

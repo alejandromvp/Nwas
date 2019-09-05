@@ -90,7 +90,7 @@
          <img src="https://scontent.fscl9-2.fna.fbcdn.net/v/t1.0-9/68932380_1338933066274636_7997806005159198720_n.jpg?_nc_cat=108&_nc_oc=AQnS88i7PsP8RFhs9zuzi6ed5rf5K8BfEB_Af8xQJcT7f54VhTvlcJaHBMzDwVsE5Sc&_nc_ht=scontent.fscl9-2.fna&oh=e9e63a2680a734e97788fca8a77e8583&oe=5DDBFD41" alt="">
       </div><!-- /.blog-post -->
 
-       <form action="">
+
       <div id="caja_mensajes_div">
         <div id="form">
         <input type="text" id="nick" placeholder="nick" class="form-control">
@@ -100,7 +100,7 @@
         <h3 style="margin-top: 15px;">Comentarios: </h3>    
         <hr>        
       </div>
-      </form>
+
 
       <nav class="blog-pagination" style="margin-top:20px;">
         <a class="btn btn-outline-primary" href="../index.php">Regresar</a>
@@ -197,37 +197,37 @@
   <script src="../../js/freelancer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
   <script src="../../js/moment_español.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="../../js/firebase.js"></script>
     <script>
-      function decode_utf8(s) {
-          return decodeURIComponent(escape(s));
-      }
-    </script>
-    <script>
-     $(document).ready(function(){
-        $.get("bd/com.json",function(data){
-              for(var i = data.length-1;i >= 0;i--){
-                    $("#caja_mensajes_div").append('<div class="item-com"><p>Fecha mensaje: '+data[i].fecha+'<p/><p>Nickname: '+data[i].nick+'<p/><p>Mensaje: '+data[i].con+'<p/><hr style="background:#8C8C8C;">');    
-              }       
-           });      
+     $(document).ready(function(){    
+        firebase = conectarFirebase();
+        const db = firebase.database();
+        var ref = db.ref("noticias/campeon_thecheesylair8");
+
+        ref.orderByChild("fecha").on("child_added", function(snapshot){
+            var value = snapshot.val();
+            $("#caja_mensajes_div").append(
+                '<div class="item-com"><p>Fecha mensaje: '+(value.fecha)+'<p/><p>Nickname: '+value.nick+'<p/><p>Mensaje: '+value.mensaje+'<p/><hr>'
+            );        
+        });
          $("#enviar").click(function(){   
-           var mensaje =  $("#mensaje").val();
-           var nick =  $("#nick").val();
-           var fecha = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm // August 23rd 2019, 3:59:01 pm;
+           var mensaje_txt =  $("#mensaje").val();
+           var nick_txt =  $("#nick").val();
+           var fecha_txt = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm // August 23rd 2019, 3:59:01 pm;
             if(mensaje != "" && nick != ""){
-                
-               $.post("crear.php",{"mensaje":mensaje, "nick":nick, "fecha":fecha},function(data){
-               $(".item-com").remove();
-              var json = JSON.parse(data);
-                      console.log(json[0]);
-               
-              $("#mensaje").val("");
-              for(var i = json.length-1;i >= 0;i--){
-               
-                    $("#caja_mensajes_div").append(
-                      '<div class="item-com"><p>Fecha mensaje: '+json[i].fecha+'<p/><p>Nickname: '+json[i].nick+'<p/><p>Mensaje: '+json[i].con+'<p/>'
-                      );         
-              }  
-               });
+                let nuevocomentario = ref.push();
+                nuevocomentario.set({
+                  nick: nick_txt,
+                  mensaje:mensaje_txt,
+                  fecha: fecha_txt
+                }); 
+              $("#mensaje").val('');
+             $("#nick").val('');
             }else{
             alert("porfavor complete todos los campos");     
             }  

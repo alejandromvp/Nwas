@@ -2,14 +2,13 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
 
   <title>New Angels - Starcraft 2</title>
-
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -56,6 +55,9 @@
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="./roster.php">Roster</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="calendario/index.php">Calendario Eventos</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Quienes Somos</a>
@@ -152,47 +154,47 @@
     <div class="container">
 
       <!-- Contact Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: #403A05;">Contactanos</h2>
+      <h2 class="page-section-heading text-center text-uppercase mb-0" style="color: #F6E814;">Contactanos</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom">
-        <div class="divider-custom-line"></div>
-        <div class="divider-custom-icon">
-          <i class="fas fa-star"></i>
+        <div class="divider-custom-line" style="background:#F6E814;"></div>
+        <div class="divider-custom-icon" style="color:#F6E814;">
+          <i class="fas fa-star" ></i>
         </div>
-        <div class="divider-custom-line"></div>
+        <div class="divider-custom-line" style="background:#F6E814;"></div>
       </div>
 
       <!-- Contact Section Form -->
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-          <form name="sentMessage" id="contactForm" novalidate="novalidate">
+         
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                <label style="color:red;">Nombre</label>
-                <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" data-validation-required-message="Please enter your name.">
+                <label>Nombre</label>
+                <input class="form-control" id="name" type="text" placeholder="Nombre" required="required" style="color: #DC4323;" >
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Email</label>
-                <input class="form-control" id="email" type="email" placeholder="Email" required="required" data-validation-required-message="Please enter your email address.">
+                <input class="form-control" id="email" type="email" placeholder="Email" required="required" style="color: #DC4323;">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Numero Celular</label>
-                <input class="form-control" id="phone" type="tel" placeholder="Numero Celular" required="required" data-validation-required-message="Please enter your phone number.">
+                <input class="form-control" id="phone" type="tel" placeholder="Numero Celular" style="color: #DC4323;">
                 <p class="help-block text-danger"></p>
               </div>
             </div>
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
                 <label>Mensaje</label>
-                <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" required="required" data-validation-required-message="Please enter a message."></textarea>
+                <textarea class="form-control" id="message" rows="5" placeholder="Mensaje" style="color: #DC4323;"></textarea>
                 <p class="help-block text-danger"></p>
               </div>
             </div>
@@ -201,7 +203,6 @@
             <div class="form-group">
               <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Enviar</button>
             </div>
-          </form>
         </div>
       </div>
 
@@ -277,20 +278,68 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+  <script src="../../js/moment_español.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
   <script>
-    /*var MongoClient = require('mongodb').MongoClient;
-      var url = "mongodb://localhost:27017/";
-
-      MongoClient.connect(url, function(err, db) {
-        if (err) throw err;
-        var dbo = db.db("MensajesDB");
-        var query = { address: /^S/ };
-        dbo.collection("customers").find(query).toArray(function(err, result) {
-          if (err) throw err;
-          console.log(result);
-          db.close();
-        });
-}); */
+    $(document).ready(function(){
+      firebase = conectarFirebase();
+      const db = firebase.database();
+      var ref = db.ref("Mensajes");
+      $("#sendMessageButton").click(function(){
+          var bandera = 1;
+          var name_txt =  $("#name").val();
+          var email_txt =  $("#email").val();
+          var phone_txt =  $("#phone").val();
+          var message_txt =  $("#message").val();
+          if(name_txt == ""){
+            bandera = 0;
+          }
+          if(email_txt == ""){
+            bandera = 0;
+          }
+          if(phone_txt == ""){
+            bandera = 0;
+          }
+          if(message_txt == ""){
+            bandera = 0;
+          }
+          if(bandera == 0){
+           Swal.fire({
+              type: 'error',
+              title: 'Oops...',
+              text: 'Porfavor complete todos los campos del formulario',
+              // footer: '<a href>Why do I have this issue?</a>'
+            })
+          }
+          if(bandera == 1){
+            let fecha_txt = moment().format('MMMM Do YYYY, h:mm:ss a'); // agosto 23º 2019, 4:03:49 pm //
+            let nuevomensaje = ref.push();
+                nuevomensaje.set({
+                  name: name_txt,
+                  email :email_txt,
+                  telefono: phone_txt,
+                  mensaje: message_txt,
+                  fecha: fecha_txt
+                }); 
+            Swal.fire({
+              position: 'center',
+              type: 'success',
+              title: 'El formulario se ha enviado exitosamente',
+              showConfirmButton: false,
+              timer: 2000
+            })
+            var name_txt =  $("#name").val('');
+            var email_txt =  $("#email").val('');
+            var phone_txt =  $("#phone").val('');
+            var message_txt =  $("#message").val('');
+          }// fin if bandera
+      });//fin funcion click   
+    });    
   </script>
 </body>
 
